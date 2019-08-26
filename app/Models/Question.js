@@ -3,12 +3,14 @@ export default class Question {
         this.Question = data.question
         this.Answer = data.answer
         this.Value = data.value
+        this.Category = data.category.title
     }
 
     get Template() {
         return `
         <div class="col">
-            <h4>${this.Question}</h4>
+            <h4>Cateogory: ${this.Category}</h4>
+            <h4 class="mt-3">${this.Question}</h4>
             <h6>Value: ${this.Value}</h6>
             <form onsubmit="app.controllers.jeopardyController.userAnswerCheck(event)">
             <div class="form-group">
