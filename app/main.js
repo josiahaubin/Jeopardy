@@ -1,10 +1,10 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import JeopardyController from "./Controllers/JeopardyController.js";
 
 
 class App {
     constructor() {
         this.controllers = {
-            valuesController: new ValuesController()
+            jeopardyController: new JeopardyController()
         }
     }
 }
