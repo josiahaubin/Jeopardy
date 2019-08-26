@@ -8,8 +8,8 @@ export default class Question {
     get Template() {
         return `
         <div class="col">
-            <h1>${this.Question}</h1>
-            <h5>${this.Value}</h5>
+            <h4>${this.Question}</h4>
+            <h6>Value: ${this.Value}</h6>
             <span>${this.Answer}</span>
         </div>
 

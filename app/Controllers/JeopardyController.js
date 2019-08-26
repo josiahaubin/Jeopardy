@@ -5,8 +5,6 @@ let _jeopardyService = new JeopardyService()
 
 function _draw() {
     let question = _jeopardyService.Question
-
-
     document.getElementById('question').innerHTML = question.Template
 }
 
