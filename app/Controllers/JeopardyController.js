@@ -17,4 +17,12 @@ export default class JeopardyController {
         //NOTE Retrieve data
         _jeopardyService.getRandomQuestion()
     }
+
+    showAnswer() {
+        document.getElementById('answer').style.display = "block"
+    }
+
+    nextQuestion() {
+        _jeopardyService.getRandomQuestion()
+    }
 }
